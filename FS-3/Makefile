@@ -1,4 +1,7 @@
-all: read_file
-read_file:read_file.cpp 
-	g++ -o read_file read_file.cpp
-clean: rm -f read_file
+all: hacker-rm
+
+hacker-rm: hacker-rm.cpp
+	g++ -o hacker-rm hacker-rm.cpp
+	
+clean:
+	rm -f hacker-rm      
